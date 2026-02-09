@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FaBuilding, FaHammer, FaHome, FaPaintBrush, FaTools, FaCity, FaCheckCircle, FaRuler } from 'react-icons/fa'
+import { FaBuilding, FaHammer, FaHome, FaPaintBrush, FaTools, FaCity, FaCheckCircle } from 'react-icons/fa'
 
 const ServicesPage = () => {
     const ref = useRef(null)

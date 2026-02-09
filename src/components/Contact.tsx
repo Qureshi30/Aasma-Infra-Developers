@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaUser, FaPaperPlane } from 'react-icons/fa'
 

@@ -1,6 +1,5 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { FaArrowDown } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
@@ -12,7 +11,6 @@ const Hero = () => {
     })
 
     const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
-    const opacity = useTransform(scrollYProgress, [0, 1], [1, 0])
 
     return (
         <section id="home" ref={ref} className="relative h-screen overflow-hidden">

@@ -1,4 +1,3 @@
-import React from 'react'
 import Contact from '../components/Contact'
 import { motion } from 'framer-motion'
 import { FaMapMarkerAlt } from 'react-icons/fa'
