@@ -179,7 +179,7 @@ const TeamPage = () => {
                             whileHover={{ scale: 1.05 }}
                             className="glass inline-block px-8 py-4 rounded-full"
                         >
-                            <p className="text-white text-lg">
+                            <p className="text-navy text-lg font-semibold">
                                 <span className="text-accent font-bold">Three Generations</span> of Construction Excellence
                             </p>
                         </motion.div>
