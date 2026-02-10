@@ -48,8 +48,11 @@ const Footer = () => {
                                     href={social.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    whileHover={{ scale: 1.2, rotate: 360 }}
-                                    transition={{ duration: 0.3 }}
+                                    whileHover={{
+                                        scale: 1.2,
+                                        rotate: 15,
+                                        transition: { duration: 0.2, ease: "easeOut" }
+                                    }}
                                     className="text-2xl text-gray-400 hover:text-accent transition-colors duration-300"
                                     aria-label={social.label}
                                 >

@@ -95,8 +95,20 @@ const ServicesPage = () => {
                                 className="glass p-8 rounded-2xl group cursor-pointer"
                             >
                                 <motion.div
-                                    whileHover={{ scale: 1.2, rotate: 360 }}
-                                    transition={{ duration: 0.5 }}
+                                    animate={{
+                                        rotate: [0, 5, -5, 0],
+                                    }}
+                                    transition={{
+                                        duration: 3,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        repeatDelay: 1,
+                                        delay: index * 0.3
+                                    }}
+                                    whileHover={{
+                                        scale: 1.2,
+                                        transition: { duration: 0.3, ease: "easeOut" }
+                                    }}
                                     className="text-accent text-5xl mb-6"
                                 >
                                     {service.icon}

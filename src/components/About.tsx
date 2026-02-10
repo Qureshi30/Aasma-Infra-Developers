@@ -113,8 +113,20 @@ const About = () => {
                         >
                             <motion.div
                                 className="text-accent mb-4 flex justify-center"
-                                whileHover={{ scale: 1.2, rotate: 360 }}
-                                transition={{ duration: 0.5 }}
+                                animate={{
+                                    rotate: [0, 5, -5, 0],
+                                }}
+                                transition={{
+                                    duration: 3,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                    repeatDelay: 1,
+                                    delay: index * 0.3
+                                }}
+                                whileHover={{
+                                    scale: 1.2,
+                                    transition: { duration: 0.3, ease: "easeOut" }
+                                }}
                             >
                                 {feature.icon}
                             </motion.div>

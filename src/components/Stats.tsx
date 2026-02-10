@@ -67,8 +67,20 @@ const Stats = () => {
                             className="text-center group bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-accent transition-all duration-300"
                         >
                             <motion.div
-                                whileHover={{ scale: 1.2, rotate: 360 }}
-                                transition={{ duration: 0.6 }}
+                                animate={{
+                                    rotate: [0, 5, -5, 0],
+                                }}
+                                transition={{
+                                    duration: 3,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                    repeatDelay: 1,
+                                    delay: index * 0.3
+                                }}
+                                whileHover={{
+                                    scale: 1.2,
+                                    transition: { duration: 0.3, ease: "easeOut" }
+                                }}
                                 className="text-accent text-4xl sm:text-5xl md:text-6xl mb-4 flex justify-center"
                             >
                                 {stat.icon}

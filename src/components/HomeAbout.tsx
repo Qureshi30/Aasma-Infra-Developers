@@ -52,8 +52,19 @@ const HomeAbout = () => {
                         >
                             <motion.div
                                 className="text-accent text-4xl sm:text-5xl md:text-6xl mb-6 flex justify-center"
-                                whileHover={{ scale: 1.2, rotate: 360 }}
-                                transition={{ duration: 0.6 }}
+                                animate={{
+                                    rotate: [0, 5, -5, 0],
+                                }}
+                                transition={{
+                                    duration: 3,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                    repeatDelay: 1
+                                }}
+                                whileHover={{
+                                    scale: 1.2,
+                                    transition: { duration: 0.3, ease: "easeOut" }
+                                }}
                             >
                                 {item.icon}
                             </motion.div>
