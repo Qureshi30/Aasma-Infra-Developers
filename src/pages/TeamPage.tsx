@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaEnvelope, FaGraduationCap, FaBriefcase } from 'react-icons/fa'
+import ShakeelChacha from '../assets/ShakeelChacha.png'
+import MustufaBhai from '../assets/MustufaBhai.png'
+import AhmedImage from '../assets/image.png'
 
 const TeamPage = () => {
 
@@ -7,7 +10,7 @@ const TeamPage = () => {
         {
             name: "Mr. Shakeel Ahmed Ansari",
             position: "Founder & Principal Visionary",
-            image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+            image: ShakeelChacha,
             education: "B.E. Civil Engineering",
             experience: "25+ Years",
             bio: "The founder and principal visionary of AASMA GROUP brings over 25 years of extensive experience in the construction and real estate industry. A civil engineering graduate with a strong foundation in architectural planning, project execution, and regulatory compliance, he began his professional journey in the early 1990s. During this period, he collaborated with some of the most prominent builders of Mumbai, gaining unmatched exposure to high-value developments, on-ground challenges, and the complexities of urban redevelopment.",
@@ -17,7 +20,7 @@ const TeamPage = () => {
         {
             name: "Mr. Mustafa Ansari",
             position: "Operations Director",
-            image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+            image: MustufaBhai,
             education: "B.Com, UPSC Civil Services Aspirant",
             experience: "8+ Years",
             bio: "Carrying forward the legacy, Mr. Mustafa Ansari—son of Mr. Shakeel Ahmed—has been actively managing the firm's operations for the past eight years. A graduate in commerce and a former aspirant of the prestigious UPSC Civil Services Examination, Mr. Mustafa combines academic insight with business pragmatism.",
@@ -27,7 +30,7 @@ const TeamPage = () => {
         {
             name: "Mr. Ahmed Ansari",
             position: "Director - Branding & Marketing",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+            image: AhmedImage,
             education: "MBA in Family Managed Business",
             experience: "5+ Years",
             bio: "Ahmed, the second son of Mr. Shakeel - founder of AASMA Infra represents the next generation of leadership within the company. Having completed his MBA in Family Managed Business, Ahmed has stepped into the business with fresh ideas, modern insights, and a strong vision for growth.",
@@ -86,7 +89,7 @@ const TeamPage = () => {
                                         <img
                                             src={member.image}
                                             alt={member.name}
-                                            className="w-full h-full object-cover object-top"
+                                            className="w-full h-full object-contain object-center"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
                                     </motion.div>

@@ -80,7 +80,7 @@ const AboutPage = () => {
                             className="glass p-8 rounded-2xl text-center"
                         >
                             <h3 className="text-xl sm:text-2xl font-bold text-accent mb-4">Our Vision</h3>
-                            <p className="text-gray-300 leading-relaxed">
+                            <p className="text-black leading-relaxed">
                                 To redefine the skyline of South Bombay with landmark developments that blend timeless aesthetics, modern engineering, and uncompromising trust—becoming the most respected and sought-after boutique real estate brand in the region.
                             </p>
                         </motion.div>
@@ -93,7 +93,7 @@ const AboutPage = () => {
                             className="glass p-8 rounded-2xl text-center"
                         >
                             <h3 className="text-xl sm:text-2xl font-bold text-accent mb-4">Our Mission</h3>
-                            <div className="text-gray-300 leading-relaxed space-y-2">
+                            <div className="text-black leading-relaxed space-y-2">
                                 <p>• Creating exceptional living and commercial spaces that elevate lifestyles</p>
                                 <p>• Upholding transparency, integrity, and quality in every square foot we build</p>
                                 <p>• Nurturing strong relationships with our clients, partners and community through personalized service and long-term value creation</p>
@@ -113,8 +113,8 @@ const AboutPage = () => {
                                     <div key={index} className="flex items-center gap-3 text-left">
                                         <div className="text-accent text-2xl flex-shrink-0">{value.icon}</div>
                                         <div>
-                                            <h4 className="text-white font-bold">{value.title}</h4>
-                                            <p className="text-gray-400 text-sm">{value.description}</p>
+                                            <h4 className="text-black font-bold">{value.title}</h4>
+                                            <p className="text-black text-sm">{value.description}</p>
                                         </div>
                                     </div>
                                 ))}
