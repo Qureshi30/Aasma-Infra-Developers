@@ -139,15 +139,15 @@ const Projects = () => {
                             className="group relative overflow-hidden rounded-xl bg-white border-2 border-lightGray hover:border-accent shadow-xl transition-all duration-300"
                         >
                             {/* Image */}
-                            <div className="relative h-64 overflow-hidden">
+                            <div className="relative h-64 overflow-hidden bg-gray-100">
                                 <motion.img
-                                    whileHover={{ scale: 1.15 }}
+                                    whileHover={{ scale: 1.1 }}
                                     transition={{ duration: 0.6 }}
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-contain"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                 {/* Status Badge */}
                                 <div className="absolute top-4 right-4">

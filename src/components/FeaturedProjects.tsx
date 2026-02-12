@@ -72,15 +72,15 @@ const FeaturedProjects = () => {
                             whileHover={{ y: -10, boxShadow: "0 25px 50px rgba(0,0,0,0.15)" }}
                             className="group relative overflow-hidden rounded-xl bg-white shadow-xl border-2 border-transparent hover:border-accent transition-all duration-300"
                         >
-                            <div className="relative h-64 overflow-hidden">
+                            <div className="relative h-64 overflow-hidden bg-gray-100">
                                 <motion.img
-                                    whileHover={{ scale: 1.15 }}
+                                    whileHover={{ scale: 1.1 }}
                                     transition={{ duration: 0.6 }}
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-contain"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 <div className="absolute top-4 right-4">
                                     <span className={`px-4 py-2 rounded-lg text-xs font-bold shadow-lg ${project.status === 'Completed' ? 'bg-green-500 text-white' : 'bg-secondary text-white'
                                         }`}>
