@@ -2,6 +2,14 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaMapMarkerAlt, FaRuler, FaCheckCircle } from 'react-icons/fa'
 
+// Import project images
+import SeaviewApartment from '../assets/Projects/SeaviewApartment.png'
+import NecklaceApartment from '../assets/Projects/NecklaceApartment.png'
+import MohammediPalace from '../assets/Projects/MohammediPalace.png'
+import YashviRegency from '../assets/Projects/YashviRegency.png'
+import AhmedPalace from '../assets/Projects/AhmedPalace.png'
+import UpcomingProject from '../assets/Projects/Upcoming.png'
+
 const Projects = () => {
     const [activeCategory, setActiveCategory] = useState('all')
 
@@ -10,51 +18,51 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: "Sea View Residency",
+            title: "Sea View Apartment",
             location: "J.S.S. Road, Mumbai",
             area: "15,000 Sq. Ft.",
             status: "completed",
-            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            image: SeaviewApartment
         },
         {
             id: 2,
-            title: "Chira Bazar Heights",
+            title: "Necklace Apartment",
             location: "Chira Bazar, Mumbai",
             area: "20,000 Sq. Ft.",
             status: "completed",
-            image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            image: NecklaceApartment
         },
         {
             id: 3,
-            title: "Chandanwadi Premium",
+            title: "Mohammedi Palace",
             location: "Chandanwadi, Mumbai",
             area: "18,000 Sq. Ft.",
-            status: "ongoing",
-            image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            status: "completed",
+            image: MohammediPalace
         },
         {
             id: 4,
-            title: "South Mumbai Towers",
+            title: "Yashvi Regency",
             location: "South Mumbai",
             area: "25,000 Sq. Ft.",
             status: "ongoing",
-            image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            image: YashviRegency
         },
         {
             id: 5,
-            title: "Heritage Plaza",
+            title: "Ahmed Palace",
             location: "Girgaon, Mumbai",
             area: "12,000 Sq. Ft.",
-            status: "upcoming",
-            image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            status: "ongoing",
+            image: AhmedPalace
         },
         {
             id: 6,
-            title: "Marina Bay Apartments",
-            location: "Colaba, Mumbai",
+            title: "Upcoming Project",
+            location: "South Mumbai",
             area: "22,000 Sq. Ft.",
             status: "upcoming",
-            image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            image: UpcomingProject
         }
     ]
 

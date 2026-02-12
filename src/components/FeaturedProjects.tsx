@@ -3,6 +3,11 @@ import { motion, useInView } from 'framer-motion'
 import { FaMapMarkerAlt, FaRuler, FaArrowRight } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 
+// Import project images
+import SeaviewApartment from '../assets/Projects/SeaviewApartment.png'
+import NecklaceApartment from '../assets/Projects/NecklaceApartment.png'
+import YashviRegency from '../assets/Projects/YashviRegency.png'
+
 const FeaturedProjects = () => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, amount: 0.2 })
@@ -11,29 +16,29 @@ const FeaturedProjects = () => {
     const featuredProjects = [
         {
             id: 1,
-            title: "Sea View Residency",
+            title: "Sea View Apartment",
             location: "J.S.S. Road, Mumbai",
             area: "15,000 Sq. Ft.",
             status: "Completed",
-            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: SeaviewApartment,
             description: "Luxury boutique apartments with modern amenities"
         },
         {
             id: 2,
-            title: "Chira Bazar Heights",
+            title: "Necklace Apartment",
             location: "Chira Bazar, Mumbai",
             area: "20,000 Sq. Ft.",
             status: "Completed",
-            image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: NecklaceApartment,
             description: "Premium residential complex in heritage area"
         },
         {
             id: 3,
-            title: "South Mumbai Towers",
+            title: "Yashvi Regency",
             location: "South Mumbai",
             area: "25,000 Sq. Ft.",
             status: "Ongoing",
-            image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: YashviRegency,
             description: "Modern high-rise with cutting-edge design"
         }
     ]
